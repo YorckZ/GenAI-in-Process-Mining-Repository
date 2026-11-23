@@ -29,6 +29,8 @@ jobs:
       
       - name: Build
         run: npm run build
+        env:
+          BASE_URL: /GenAI-in-Process-Mining-Repository/
          
       - name: Copy data to dist
         run: cp -r data dist/
